@@ -9,6 +9,15 @@
         android:id="@+id/homeFragment2"
         android:name="ru.example.bottomnavigationtest.ui.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment2_to_anotherFragment"
+            app:destination="@id/anotherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anotherFragment"
+        android:name="ru.example.bottomnavigationtest.ui.AnotherFragment"
+        android:label="AnotherFragment"
+        tools:layout="@layout/fragment_another" />
 
 </navigation>
